@@ -1,2 +1,4 @@
+{{input type='range' min=3 max=10 value=size mouseUp=(action 'sliderUpdate' size)}}
+{{input type='range' min=1 max=100 step=5 value=permissiveness mouseUp=(action 'permissivenessUpdate' permissiveness)}}
 <canvas id="canvas" width={{screenWidth}} height={{screenHeight}}></canvas>
 {{yield}}
