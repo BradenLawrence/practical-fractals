@@ -1,7 +1,16 @@
 <div class="nav">
-  {{precision-slider}}
-  {{color-list}}
+  {{precision-slider 
+    precision=precision
+  }}
+  {{color-list
+    color=color
+  }}
 </div>
-{{display-area}}
+{{display-area
+  color=color
+  formula=formula
+  position=position
+  precision=precision
+}}
 
 {{outlet}}
