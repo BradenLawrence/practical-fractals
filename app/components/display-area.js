@@ -11,7 +11,6 @@ export default Component.extend({
   initCanvas() {
     const canvas = this.element.querySelector('canvas')
     const ctx = canvas.getContext('2d');
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
     const sizeCounter = Number(this.precision.blockSize);
     const permissivenessCounter = Number(this.precision.permissiveness)
     const panX = this.position.x;
