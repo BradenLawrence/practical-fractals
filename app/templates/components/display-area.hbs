@@ -1,16 +1,3 @@
-{{input 
-  type='range' 
-  min=3 
-  max=10 
-  value=this.precision.blockSize 
-  mouseUp=(action 'sizeUpdate' this.precision.blockSize)
-}}
-{{input 
-  type='range' 
-  min=1 
-  max=100 
-  value=this.precision.permissiveness 
-  mouseUp=(action 'permissivenessUpdate' this.precision.permissiveness)
-}}
+{{precision-slider precision=precision updateHandler=(action "initCanvas")}}
 <canvas id="canvas" width={{screenWidth}} height={{screenHeight}}></canvas>
 {{yield}}
