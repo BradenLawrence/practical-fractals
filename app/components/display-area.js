@@ -3,8 +3,6 @@ import Component from '@ember/component';
 export default Component.extend({
   screenWidth:  document.documentElement.clientWidth,
   screenHeight:  document.documentElement.clientHeight,
-  size: 10,
-  permissiveness: 100,
   didInsertElement() {
     this.initCanvas()
   },
