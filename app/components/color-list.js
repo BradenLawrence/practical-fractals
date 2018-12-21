@@ -7,6 +7,7 @@ export default Component.extend({
     onColorChange(value){
       let previousValidColor = this.color.failColor1
       if(isHexColor(value)){
+        this.color.failColor1 = value;
         this.updateHandler(value);
       } else {
         this.set('formColor', previousValidColor);

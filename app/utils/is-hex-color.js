@@ -1,10 +1,14 @@
 export default function isHexColor(input) {
+  if(typeof input !== 'string'){
+    return false;
+  }
   if(input.charAt(0) === '#'){
     input = input.slice(1);
   }
-  var a = parseInt(input,16);
-  a = ('0' + a).slice(-6)
-  console.log('Input: ', input)
-  console.log('Hexified input: ', a)
-  return (a.toString(16) == input.toLowerCase())
+  let hex = parseInt(input,16);
+  let hexString = hex.toString(16);
+  for(let i=hexString.length; i<6; i++){
+    hexString = '0' + hexString;
+  }
+  return (hexString === input.toLowerCase())
 }
