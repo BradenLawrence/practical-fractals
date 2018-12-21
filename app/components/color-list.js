@@ -1,20 +1,16 @@
 import Component from '@ember/component';
-
-const isHexColor = (input) => {
-  if(input.charAt(0) === '#' && input.length === 7){
-    return true;
-  } else {
-    return false;
-  }
-}
+import isHexColor from '../utils/is-hex-color'
 
 export default Component.extend({
+  formColor: '',
   actions: {
     onColorChange(value){
+      let previousValidColor = this.color.failColor1
       if(isHexColor(value)){
-        this.get('updateHandler')(value);
+        this.updateHandler(value);
+      } else {
+        this.set('formColor', previousValidColor);
       }
-      return value;
     }
   }
 });
