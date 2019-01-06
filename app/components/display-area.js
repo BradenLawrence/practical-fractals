@@ -18,10 +18,14 @@ export default Component.extend({
       for(let x=0; x<canvas.width; x+=sizeCounter){
         for(let y=0; y<canvas.height; y+=sizeCounter){
           const doesBelong = this.formula.mandelbrot.check(x/zoom-panX,y/zoom-panY, permissivenessCounter)
-          if(doesBelong){
+          if(doesBelong === -1){
             ctx.fillStyle = this.color.belongsColor;
-          } else {
+          } else if(doesBelong > (this.precision.permissiveness * .66)){
             ctx.fillStyle = this.color.failColor1;
+          } else if(doesBelong > (this.precision.permissiveness * .33)){
+            ctx.fillStyle = this.color.failColor2;
+          } else {
+            ctx.fillStyle = this.color.failColor3;
           }
           ctx.fillRect(x,y,sizeCounter,sizeCounter)
         }

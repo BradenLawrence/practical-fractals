@@ -1,7 +1,19 @@
 {{input 
   type="color"
   max=7
-  value=this.color.failColor1 
-  change=(action "onColorChange" this.formColor)
+  value=this.form1Color 
+  change=(action "onColorChange" this.form1Color)
+}}
+{{input 
+  type="color"
+  max=7
+  value=this.form2Color 
+  change=(action "onColorChange" this.form2Color)
+}}
+{{input 
+  type="color"
+  max=7
+  value=this.form3Color 
+  change=(action "onColorChange" this.form3Color)
 }}
 {{yield}}
