@@ -19,9 +19,9 @@ export default Component.extend({
         for(let y=0; y<canvas.height; y+=sizeCounter){
           const doesBelong = this.formula.mandelbrot.check(x/zoom-panX,y/zoom-panY, permissivenessCounter)
           if(doesBelong){
-            ctx.fillStyle = '#' + this.color.belongsColor;
+            ctx.fillStyle = this.color.belongsColor;
           } else {
-            ctx.fillStyle = '#' + this.color.failColor1;
+            ctx.fillStyle = this.color.failColor1;
           }
           ctx.fillRect(x,y,sizeCounter,sizeCounter)
         }

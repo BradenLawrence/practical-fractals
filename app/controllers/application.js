@@ -2,8 +2,8 @@ import Controller from '@ember/controller';
 
 export default Controller.extend({
   color: {
-    belongsColor: '000000',
-    failColor1:   '0000FF'
+    belongsColor: '#000000',
+    failColor1:   '#0000FF',
   },
   formula: {
     mandelbrot: {
@@ -30,7 +30,7 @@ export default Controller.extend({
     zoom: 300
   },
   precision: {
-    blockSize: 5,
+    blockSize: 3,
     permissiveness: 50
   }
 });
