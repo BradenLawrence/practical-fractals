@@ -1,19 +1,19 @@
 {{input 
   type="color"
   max=7
-  value=this.form1Color 
-  change=(action "onColorChange" this.form1Color)
+  value=this.formColor0 
+  change=(action "onColorChange" this.formColor0 1)
 }}
 {{input 
   type="color"
   max=7
-  value=this.form2Color 
-  change=(action "onColorChange" this.form2Color)
+  value=this.formColor1 
+  change=(action "onColorChange" this.formColor1 2)
 }}
 {{input 
   type="color"
   max=7
-  value=this.form3Color 
-  change=(action "onColorChange" this.form3Color)
+  value=this.formColor2
+  change=(action "onColorChange" this.formColor2 3)
 }}
 {{yield}}
