@@ -4,8 +4,11 @@ export default Controller.extend({
   color: {
     belongsColor: '#000000',
     failColor1:   '#3333FF',
-    failColor2:   '#000088',
-    failColor3:   '#000055'
+    failColor2:   '#111188',
+    failColor3:   '#000066',
+    failColor4:   '#000044',
+    failColor5:   '#000022',
+    failColor6:   '#000011'
   },
   formula: {
     mandelbrot: {
@@ -27,9 +30,9 @@ export default Controller.extend({
     }
   },
   position: {
-    x: 3,
-    y: 1.5,
-    zoom: 300
+    x: 2.25,
+    y: 1,
+    zoom: 75
   },
   precision: {
     blockSize: 3,

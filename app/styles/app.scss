@@ -7,6 +7,27 @@ body {
   background-color: black;
 }
 
-  canvas { 
-    display:block; 
-  }
+.display-area {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
+}
+
+.menu {
+  grid-column-start: 1;
+}
+
+.view {
+  grid-column-start: 2;
+  width: 100%;
+  overflow: hidden;
+}
+
+canvas { 
+  width: 200vh;
+  height: 100vh;
+}
+
+label {
+  color: #ffffff;
+}

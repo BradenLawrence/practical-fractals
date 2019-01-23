@@ -1,4 +1,10 @@
-{{precision-slider precision=precision updateHandler=(action "initCanvas")}}
-{{color-list color=color updateHandler=(action "initCanvas")}}
-<canvas id="canvas" width={{screenWidth}} height={{screenHeight}}></canvas>
+<div class="display-area">
+  <div class="menu">
+    <p>{{precision-slider precision=precision updateHandler=(action "initCanvas")}}</p>
+    <p>{{color-list color=color updateHandler=(action "initCanvas")}}</p>
+  </div>
+  <div class="view">
+    <canvas id="canvas"></canvas>
+  </div>
+</div>
 {{yield}}
