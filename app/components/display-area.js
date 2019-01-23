@@ -1,8 +1,6 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-  screenWidth:  document.documentElement.clientWidth,
-  screenHeight:  document.documentElement.clientHeight,
   didInsertElement() {
     this.send('initCanvas');
   },
@@ -24,8 +22,14 @@ export default Component.extend({
             ctx.fillStyle = this.color.failColor1;
           } else if(doesBelong > (this.precision.permissiveness * .33)){
             ctx.fillStyle = this.color.failColor2;
-          } else {
+          } else if(doesBelong > (this.precision.permissiveness * .11)){
             ctx.fillStyle = this.color.failColor3;
+          } else if(doesBelong > (this.precision.permissiveness * .05)){
+            ctx.fillStyle = this.color.failColor4;
+          } else if(doesBelong > (this.precision.permissiveness * .025)){
+            ctx.fillStyle = this.color.failColor5;
+          } else {
+            ctx.fillStyle = this.color.failColor6;
           }
           ctx.fillRect(x,y,sizeCounter,sizeCounter)
         }

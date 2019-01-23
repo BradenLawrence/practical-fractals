@@ -1,19 +1,61 @@
-{{input 
-  type="color"
-  max=7
-  value=this.formColor0 
-  change=(action "onColorChange" this.formColor0 1)
-}}
-{{input 
-  type="color"
-  max=7
-  value=this.formColor1 
-  change=(action "onColorChange" this.formColor1 2)
-}}
-{{input 
-  type="color"
-  max=7
-  value=this.formColor2
-  change=(action "onColorChange" this.formColor2 3)
-}}
+<label for="color1">Color 1:</label>
+<p>
+  {{input
+    id="color1" 
+    type="color"
+    max=7
+    value=this.formColor0 
+    change=(action "onColorChange" this.formColor0 1)
+  }}
+</p>
+<label for="color1">Color 2:</label>
+<p>
+  {{input 
+    id="color2"
+    type="color"
+    max=7
+    value=this.formColor1 
+    change=(action "onColorChange" this.formColor1 2)
+  }}
+</p>
+<label for="color1">Color 3:</label>
+<p>
+  {{input 
+    id="color3"
+    type="color"
+    max=7
+    value=this.formColor2
+    change=(action "onColorChange" this.formColor2 3)
+  }}
+</p>
+<label for="color4">Color 4:</label>
+<p>
+  {{input 
+    id="color4"
+    type="color"
+    max=7
+    value=this.formColor3
+    change=(action "onColorChange" this.formColor3 4)
+  }}
+</p>
+<label for="color5">Color 5:</label>
+<p>
+  {{input 
+    id="color5"
+    type="color"
+    max=7
+    value=this.formColor4
+    change=(action "onColorChange" this.formColor4 5)
+  }}
+</p>
+<label for="color6">Color 6:</label>
+<p>
+  {{input 
+    id="color6"
+    type="color"
+    max=7
+    value=this.formColor5
+    change=(action "onColorChange" this.formColor5 6)
+  }}
+</p>
 {{yield}}
