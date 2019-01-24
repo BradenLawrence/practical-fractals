@@ -13,6 +13,10 @@
   top: 5vh;
 }
 
+input#resolution {
+  direction: rtl;
+}
+
 .fractal-canvas {
   height: 100vh;
   width: 100vw;
