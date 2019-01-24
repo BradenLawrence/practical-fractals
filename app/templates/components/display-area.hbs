@@ -1,10 +1,10 @@
-<div class="display-area">
-  <div class="menu">
-    <p>{{precision-slider precision=precision updateHandler=(action "initCanvas")}}</p>
-    <p>{{color-list color=color updateHandler=(action "initCanvas")}}</p>
+<div class="fractal-canvas">
+  <div class="ui left internal rail">
+    <div class="ui segment fractal-menu">
+      <p>{{precision-slider precision=precision updateHandler=(action "initCanvas")}}</p>
+      <p>{{color-list color=color updateHandler=(action "initCanvas")}}</p>
+    </div>
   </div>
-  <div class="view">
-    <canvas id="canvas"></canvas>
-  </div>
+  <canvas id="canvas"></canvas>
 </div>
 {{yield}}
