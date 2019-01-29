@@ -1,23 +1,25 @@
-<label for="resolution">Resolution Slider:</label>
-<p>
-  {{input 
-    id="resolution"
-    type="range" 
-    min=1
-    max=10 
-    value=this.precision.blockSize 
-    change=(action "onPrecisionChange" this.precision.blockSize)
-  }}
-</p>
-<label for="precision">Precision Slider:</label>
-<p>
-  {{input 
-    id="precision"
-    type="range" 
-    min=1 
-    max=400
-    value=this.precision.permissiveness 
-    change=(action "onPrecisionChange" this.precision.permissiveness)
-  }}
-</p>
+<div class="center">
+  <label for="resolution">Resolution Slider:</label>
+  <p>
+    {{input 
+      id="resolution"
+      type="range" 
+      min=1
+      max=10 
+      value=this.precision.blockSize 
+      change=(action "onPrecisionChange" this.precision.blockSize)
+    }}
+  </p>
+  <label for="precision">Precision Slider:</label>
+  <p>
+    {{input 
+      id="precision"
+      type="range" 
+      min=1 
+      max=400
+      value=this.precision.permissiveness 
+      change=(action "onPrecisionChange" this.precision.permissiveness)
+    }}
+  </p>
+</div>
 {{yield}}

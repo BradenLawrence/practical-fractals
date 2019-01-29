@@ -1,6 +1,13 @@
 <div class="fractal-canvas">
   <div class="ui left internal rail">
     <div class="ui segment fractal-menu">
+      <h2 class="ui icon header">
+        <img 
+          class="ui icon image" 
+          src="/images/PracticalFractalsLogo.png" 
+          alt="Practical Fractals"
+        >
+      </h2>
       <p>{{precision-slider precision=precision updateHandler=(action "initCanvas")}}</p>
       <p>{{color-list color=color updateHandler=(action "initCanvas")}}</p>
     </div>
