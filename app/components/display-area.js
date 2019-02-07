@@ -10,11 +10,15 @@ export default Component.extend({
       const ctx = canvas.getContext('2d');
       const sizeCounter = Number(this.precision.blockSize);
       const permissivenessCounter = Number(this.precision.permissiveness)
+      const canvasWidth = window.innerWidth;
+      const canvasHeight = window.innerHeight;
       const panX = this.position.x;
       const panY = this.position.y;
       const zoom = this.position.zoom;
-      for(let x=0; x<canvas.width; x+=sizeCounter){
-        for(let y=0; y<canvas.height; y+=sizeCounter){
+      ctx.canvas.width = canvasWidth;
+      ctx.canvas.height = canvasHeight;
+      for(let x=0; x<ctx.canvas.width; x+=sizeCounter){
+        for(let y=0; y<ctx.canvas.height; y+=sizeCounter){
           const doesBelong = this.formula.mandelbrot.check(x/zoom-panX,y/zoom-panY, permissivenessCounter)
           if(doesBelong === -1){
             ctx.fillStyle = this.color.belongsColor;

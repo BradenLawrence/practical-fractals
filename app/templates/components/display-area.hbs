@@ -1,7 +1,7 @@
 <div class="fractal-canvas">
   <div class="ui left internal rail">
     <div class="ui segment fractal-menu">
-      <h2 class="ui icon header">
+      <h2 class="ui icon">
         <img 
           class="ui icon image" 
           src="/images/PracticalFractalsLogo.png" 
@@ -9,6 +9,7 @@
         >
       </h2>
       <p>{{precision-slider precision=precision updateHandler=(action "initCanvas")}}</p>
+      <div class="ui divider"></div>
       <p>{{color-list color=color updateHandler=(action "initCanvas")}}</p>
     </div>
   </div>

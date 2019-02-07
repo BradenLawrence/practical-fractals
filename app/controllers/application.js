@@ -32,10 +32,10 @@ export default Controller.extend({
   position: {
     x: 2.75,
     y: 1,
-    zoom: 75
+    zoom: 450
   },
   precision: {
-    blockSize: 1,
+    blockSize: 3,
     permissiveness: 50
   }
 });
