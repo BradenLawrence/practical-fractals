@@ -1,0 +1,30 @@
+<div class="center">
+  <label for="translate">Move:</label>
+  <p>
+    <button 
+      id="left"
+      onClick = {{action "onXChange" 0.05}}
+    >
+      left
+    </button>
+    <button 
+      id="right"
+      onClick = {{action "onXChange" -0.05}}
+    >
+      right
+    </button>
+    <button 
+      id="up"
+      onClick = {{action "onYChange" -0.05}}
+    >
+      up
+    </button>
+    <button 
+      id="down"
+      onClick = {{action "onYChange" 0.05}}
+    >
+      down
+    </button>
+  </p>
+</div>
+{{yield}}
