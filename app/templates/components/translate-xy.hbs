@@ -3,27 +3,31 @@
   <p>
     <button 
       id="left"
+      class="ui icon button"
       onClick = {{action "onXChange" 0.05}}
     >
-      left
+      <i class="left arrow icon"></i>
     </button>
     <button 
       id="right"
+      class="ui icon button"
       onClick = {{action "onXChange" -0.05}}
     >
-      right
+      <i class="right arrow icon"></i>
     </button>
     <button 
       id="up"
+      class="ui icon button"
       onClick = {{action "onYChange" -0.05}}
     >
-      up
+      <i class="up arrow icon"></i>
     </button>
     <button 
       id="down"
+      class="ui icon button"
       onClick = {{action "onYChange" 0.05}}
     >
-      down
+      <i class="down arrow icon"></i>
     </button>
   </p>
 </div>
