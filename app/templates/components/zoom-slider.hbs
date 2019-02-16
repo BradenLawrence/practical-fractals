@@ -1,0 +1,14 @@
+<div class="center">
+  <label for="resolution">Zoom Slider:</label>
+  <p>
+    {{input 
+      id="zoom"
+      type="range" 
+      min=1
+      max=1000 
+      value=this.position.zoom 
+      change=(action "onZoomChange" this.position.zoom)
+    }}
+  </p>
+</div>
+{{yield}}

@@ -10,6 +10,8 @@
       </h2>
       <p>{{precision-slider precision=precision updateHandler=(action "initCanvas")}}</p>
       <div class="ui divider"></div>
+      <p>{{zoom-slider position=position updateHandler=(action "initCanvas")}}</p>
+      <div class="ui divider"></div>
       <p>{{color-list color=color updateHandler=(action "initCanvas")}}</p>
     </div>
   </div>
