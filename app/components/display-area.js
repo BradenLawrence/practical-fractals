@@ -13,7 +13,6 @@ export default Component.extend({
       const canvasWidth = window.innerWidth;
       const canvasHeight = window.innerHeight;
       const panX = this.position.x;
-      console.log(this.position.x)
       const panY = this.position.y;
       const zoom = this.position.zoom;
       ctx.canvas.width = canvasWidth;
@@ -39,6 +38,6 @@ export default Component.extend({
           ctx.fillRect(x,y,sizeCounter,sizeCounter)
         }
       }
-    }  
+    }
   }
 });
