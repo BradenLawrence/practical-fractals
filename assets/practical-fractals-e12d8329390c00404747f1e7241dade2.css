@@ -1,0 +1,1 @@
+.fractal-canvas,canvas{width:100vw;height:100vh}*{margin:0;padding:0}.display-area{display:grid;grid-template-columns:1fr 5fr;height:100vh}.segment.fractal-menu{top:5vh}input#resolution{direction:rtl}.fractal-canvas{padding:0;border:0;border-radius:0;overflow:hidden}.center{text-align:center;align-items:center;justify-content:center}
